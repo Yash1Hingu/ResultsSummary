@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container{
+    display: flex;
+    align-items: center;
+    height: 100vh;
+    font-family: 'Hanken Grotesk', sans-serif;
+}
+.scroreCard {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 600px;
+    height:400px;
+    margin: 0 auto;
+    border-radius: 30px;
+    box-shadow: 3px 5px 20px 0px #00000030;
+}
+
+.score{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: hsla(0, 0%, 100%, 0.853);
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+    border-radius: 30px;
+}
+
+.score h4{
+    margin: 20px 0;
+    opacity: 0.8;
+}
+.score .circle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: linear-gradient(hsl(241, 81%, 54%),hsl(252, 100%, 67%));
+    margin: 0 auto;
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.circle h1{
+    font-size: 3rem;
+}
+
+.circle p{
+    opacity: 0.5;
+    font-size: 0.8rem;
+}
+
+.score h2 {
+    margin: 20px 0;
+}
+
+.score p{
+    padding: 0 25px;
+    opacity: 0.8;
+}
+
+.summary {
+    position: relative;
+    padding: 40px 20px;
+}
+
+.subox{
+    display: flex;
+    padding: 10px;
+    margin: 15px 0;
+    border-radius: 7px;
+}
+
+.subox .subject{
+    margin-left: 5px;
+}
+.subox .marks{
+    margin-left: auto;
+}
+
+.su-red{
+    background-color: hsla(0, 100%, 67%, 0.146);
+}
+
+.su-red .subject {
+    color: hsl(0, 100%, 67%);
+}
+
+.su-yellow{
+    background-color: hsla(39, 100%, 56%,0.146);
+}
+
+.su-yellow .subject {
+    color: hsl(39, 100%, 56%);
+}
+
+.su-green{
+    background-color: hsla(166, 100%, 37%,0.146);
+}
+
+.su-green .subject {
+    color: hsl(166, 100%, 37%);
+}
+
+.su-violte {
+    background-color: hsla(234, 85%, 45%, 0.146);
+}
+.su-violte .subject {
+    color: hsl(234, 85%, 45%);
+}
+
+.btn{
+    position: relative;
+    width: 100%;
+    padding: 15px 0;
+    margin-top: 15px;
+    border-radius: 30px;
+    color: hsl(0, 0%, 100%);
+    background-color: hsl(224, 30%, 27%);
+    border: none;
+    cursor: pointer;
+}
+
+.btn::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    border-radius: 30px;
+    top: 0;
+    right: 0;
+    background-color: aqua;
+    z-index: -1;
+}
+.btn:hover{
+    background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
+}
