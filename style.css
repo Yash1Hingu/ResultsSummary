@@ -138,3 +138,21 @@
 .btn:hover{
     background-image: linear-gradient(hsl(252, 100%, 67%),hsl(241, 81%, 54%));
 }
+
+
+@media screen and (max-width:520px){
+    .container{
+        height: auto;
+    }
+    .scroreCard{
+        display: block;
+        height: auto;
+    }
+    .score{
+        border-radius: 0px 0px 30px 30px;
+        padding: 20px 0;
+    }
+    .score p{
+        margin-bottom: 20px;
+    }
+}
